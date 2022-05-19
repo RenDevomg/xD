@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>novia?</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style>
+            body {
+                background-color: pink;
+            }
+            </style>
+        <link rel='stylesheet' type='text/css' media='screen' href='main/css'>
+        <script>
+            function accionSi(){
+                alert('ahora ya somos parejita jijiji')
+            }
+            function Botontroll(){
+                width = window.innerWidth;
+                height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+
+
+            }
+            </script>
+    </head>
+    <body>
+        <h3>Quieres ser mi novia?</h3>
+        <input type='button' onclick='accionSi()' id='btnSi' value='SI' />
+        <input type='button' id='btnNo' onmouseover="Botontroll()" value='NO' />
+        <img src='chuec.png' width="200px"
+    </body>
+    </html>
